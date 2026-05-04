@@ -1,0 +1,31 @@
+name: Test Tap
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  brew-test:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Tap locally
+        run: brew tap edihasaj/tap "$PWD"
+
+      - name: Audit casks
+        run: |
+          shopt -s nullglob
+          casks=(Casks/*.rb)
+          if [ "${#casks[@]}" -eq 0 ]; then
+            echo "No casks yet."
+            exit 0
+          fi
+          for cask in "${casks[@]}"; do
+            brew audit --cask --new --online "edihasaj/tap/$(basename "$cask" .rb)"
+          done
