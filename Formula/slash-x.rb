@@ -1,10 +1,10 @@
 class SlashX < Formula
   desc "Local X/Twitter CLI for posting, replying, and reading from the command line"
   homepage "https://github.com/edihasaj/slash-x#readme"
-  url "https://github.com/edihasaj/slash-x/releases/download/v0.9.2/slash-x-0.9.2.tar.gz"
-  sha256 "fb69305144739518371f232cbfddba70faf4d79ce1bd5a6dbef9640146d83a26"
+  url "https://github.com/edihasaj/slash-x/releases/download/v1.0.0/slash-x-1.0.0.tar.gz"
+  sha256 "8f3a45025c3390b73870e505956f72c58f88742ca8ba37d8cd8091d466f74274"
   license "MIT"
-  version "0.9.2"
+  version "1.0.0"
 
   depends_on "node"
 
