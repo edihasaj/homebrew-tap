@@ -1,8 +1,8 @@
 cask "recall" do
-  version "0.6.7"
-  sha256 "4d325c33fe7bf96c290b357d4de994f8948500030f1f01d4eff062f4af9be756"
+  version "0.7.0"
+  sha256 "2baa44c29e34d56ae5c51dfd8e60ab4b5bbd0b8e4e8ff1dbaafbebc6385bcc83"
 
-  url "https://github.com/edihasaj/recall/releases/download/v0.6.7/Recall.app.zip"
+  url "https://github.com/edihasaj/recall/releases/download/v0.7.0/Recall.app.zip"
   name "Recall"
   desc "Local repo-memory compiler for coding agents"
   homepage "https://recallmemory.dev/"
