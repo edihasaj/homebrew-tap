@@ -2,7 +2,7 @@ class SlashLinkedin < Formula
   desc "Local LinkedIn CLI for posting from the command line"
   homepage "https://github.com/edihasaj/slash-linkedin#readme"
   url "https://github.com/edihasaj/slash-linkedin/releases/download/v0.1.0/slash-linkedin-0.1.0.tar.gz"
-  sha256 "914eb7d7c08bad94be600ba52f5cbc25a9be3e4a27ecaa0f4bccc0b3203f1f18"
+  sha256 "4afabfb41f4a48ada77265268fcbbe6aa6c9108ba621e9858cc6816f45b349cf"
   license "MIT"
   version "0.1.0"
 
