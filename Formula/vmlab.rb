@@ -5,21 +5,21 @@
 class Vmlab < Formula
   desc "Transport-agnostic orchestrator for cross-OS verify loops"
   homepage "https://github.com/edihasaj/vmlab"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/edihasaj/vmlab/releases/download/v0.1.1/vmlab_0.1.1_darwin_x86_64.tar.gz"
-      sha256 "aeaebba0cb9934dae977f68e8be179cbfb6a48652175e48af2f3076d7406d9ad"
+      url "https://github.com/edihasaj/vmlab/releases/download/v0.2.0/vmlab_0.2.0_darwin_x86_64.tar.gz"
+      sha256 "aaf8f8007b73c324573da30fa6e8cb851c41dca04a8379d62ba39554740e3137"
 
       def install
         bin.install "vmlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/edihasaj/vmlab/releases/download/v0.1.1/vmlab_0.1.1_darwin_arm64.tar.gz"
-      sha256 "5c80b754c0f804df8b7510552984442090b768b8625b47fab67e1bc83607a731"
+      url "https://github.com/edihasaj/vmlab/releases/download/v0.2.0/vmlab_0.2.0_darwin_arm64.tar.gz"
+      sha256 "6f6b7142ed4cbb0dfdd6b6689dec17a60e4da36e3af3bc9daab9cd261e80d2f9"
 
       def install
         bin.install "vmlab"
@@ -29,15 +29,15 @@ class Vmlab < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/edihasaj/vmlab/releases/download/v0.1.1/vmlab_0.1.1_linux_x86_64.tar.gz"
-      sha256 "d2065df24235546108e182c728cef4d39dc9c6e46ce4c7a2dc7cd11bf622089c"
+      url "https://github.com/edihasaj/vmlab/releases/download/v0.2.0/vmlab_0.2.0_linux_x86_64.tar.gz"
+      sha256 "1648a29c67d99a12acc42193a36b4516085311a37850b5f027f2ddb46b151dd1"
       def install
         bin.install "vmlab"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/edihasaj/vmlab/releases/download/v0.1.1/vmlab_0.1.1_linux_arm64.tar.gz"
-      sha256 "0e743a550cc9cb25907a872a4e48cafeea273121af9fb36c9a9bec6fef0dc602"
+      url "https://github.com/edihasaj/vmlab/releases/download/v0.2.0/vmlab_0.2.0_linux_arm64.tar.gz"
+      sha256 "9a1ea353f17565021c5ca4ffecf0c2c525e5e94bfa0a9e871c09f26214589d41"
       def install
         bin.install "vmlab"
       end
