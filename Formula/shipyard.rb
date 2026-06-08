@@ -5,21 +5,21 @@
 class Shipyard < Formula
   desc "Point an agent at a repo + task and run an end-to-end ship pipeline"
   homepage "https://github.com/edihasaj/shipyard"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/edihasaj/shipyard/releases/download/v0.2.0/shipyard_darwin_amd64.tar.gz"
-      sha256 "b90d8452923b5351b2645cddd4980f744b498811c84a90baa5da84e8d3a7e59c"
+      url "https://github.com/edihasaj/shipyard/releases/download/v0.2.1/shipyard_darwin_amd64.tar.gz"
+      sha256 "be8608a197bc575a2db73bdd8cfa467d99d7ad01f5f918abdc62a5d6625cebf2"
 
       def install
         bin.install "shipyard"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/edihasaj/shipyard/releases/download/v0.2.0/shipyard_darwin_arm64.tar.gz"
-      sha256 "71e9d490be3cc93ba61f2d9cb3b491d31fb1932f83fccde67dbf35fa3163cefe"
+      url "https://github.com/edihasaj/shipyard/releases/download/v0.2.1/shipyard_darwin_arm64.tar.gz"
+      sha256 "f08eb404deec8f2c03acf59b4d77961dae3e81f084285b2b236954fb579ba2a9"
 
       def install
         bin.install "shipyard"
@@ -29,15 +29,15 @@ class Shipyard < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/edihasaj/shipyard/releases/download/v0.2.0/shipyard_linux_amd64.tar.gz"
-      sha256 "047d04f660f459f2c3807abe7f470c3fb8f2ab7be9647ce0e0b75e9f9825f247"
+      url "https://github.com/edihasaj/shipyard/releases/download/v0.2.1/shipyard_linux_amd64.tar.gz"
+      sha256 "49536cc871887841f8bb87baaf66620038587b70a54d6c44c063fb33060c2e26"
       def install
         bin.install "shipyard"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/edihasaj/shipyard/releases/download/v0.2.0/shipyard_linux_arm64.tar.gz"
-      sha256 "a69f14ccf8356419fecc196aaff8f1e0350cb1c6f9ad3e5fc36aef1b3971f86f"
+      url "https://github.com/edihasaj/shipyard/releases/download/v0.2.1/shipyard_linux_arm64.tar.gz"
+      sha256 "194401b385bb07addb0e50d3c9c8316954607a9509d9224023bb8dd2412733c7"
       def install
         bin.install "shipyard"
       end
