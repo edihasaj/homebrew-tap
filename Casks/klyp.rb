@@ -7,7 +7,7 @@ cask "klyp" do
   desc "Lightweight clipboard history manager for macOS"
   homepage "https://github.com/edihasaj/klyp"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Klyp.app"
 
