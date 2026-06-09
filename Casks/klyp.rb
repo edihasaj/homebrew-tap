@@ -1,10 +1,10 @@
 cask "klyp" do
-  version "0.1.12"
-  sha256 "1b736b62c4498e0cc23557f29cd07a5792c09a8c1e5fc8a56e58f069174637bb"
+  version "0.1.13"
+  sha256 "89fb567d59e0ca9217c8b085e1a5d0c9cbaddf908e0f04f0056e70f941b9049c"
 
   url "https://github.com/edihasaj/klyp/releases/download/v#{version}/Klyp.app.zip"
   name "Klyp"
-  desc "Lightweight clipboard history manager for macOS"
+  desc "Lightweight clipboard history manager"
   homepage "https://github.com/edihasaj/klyp"
 
   depends_on macos: :sonoma
