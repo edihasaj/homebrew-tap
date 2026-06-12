@@ -5,9 +5,8 @@ class Tmux < Formula
   # cherry-picked (grid_trim_history clears vacated slots — tmux commit 035a2f35,
   # GitHub issues 4777/4790). Fixes the SIGABRT in grid_free_line on copy-mode
   # entry that crashes long-running agent farms on Apple Silicon.
-  url "https://github.com/edihasaj/tmux.git",
-      tag:      "farm-3.6b.1",
-      revision: "6b3d73130d0fae1574e255c3928069f653b956ec"
+  url "https://github.com/edihasaj/tmux/archive/refs/tags/farm-3.6b.1.tar.gz"
+  sha256 "4aa61aca68d7263d519c47040040dde264340c2ae7c1624d32f73229026cdb6b"
   version "3.6b.1"
   license "ISC"
 
