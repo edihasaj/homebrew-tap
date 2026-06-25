@@ -5,21 +5,21 @@
 class Vmlab < Formula
   desc "Transport-agnostic orchestrator for cross-OS verify loops."
   homepage "https://github.com/edihasaj/vmlab"
-  version "0.2.6"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/edihasaj/vmlab/releases/download/v0.2.6/vmlab_0.2.6_darwin_x86_64.tar.gz"
-      sha256 "f9d6a297f9ecc5a1f473e6ffe5324b58df9922c5589a24b1cf8284b270ba61b1"
+      url "https://github.com/edihasaj/vmlab/releases/download/v0.3.0/vmlab_0.3.0_darwin_x86_64.tar.gz"
+      sha256 "3107b744e280e3af57586ae4680c53c741519643655d6eb3d5e8537e1123c0c0"
 
       define_method(:install) do
         bin.install "vmlab"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/edihasaj/vmlab/releases/download/v0.2.6/vmlab_0.2.6_darwin_arm64.tar.gz"
-      sha256 "8d59830d15c76ee5e10f00ab65b3abc3b370bcfd94bba013ab6e09b79994d9e5"
+      url "https://github.com/edihasaj/vmlab/releases/download/v0.3.0/vmlab_0.3.0_darwin_arm64.tar.gz"
+      sha256 "6c2ca686acde6a8e27c03dc412005bd13ea3d7a9e61054b02f78ee1ccfaf6019"
 
       define_method(:install) do
         bin.install "vmlab"
@@ -29,15 +29,15 @@ class Vmlab < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/edihasaj/vmlab/releases/download/v0.2.6/vmlab_0.2.6_linux_x86_64.tar.gz"
-      sha256 "7b0ba86c31822dbc5dc608cf2acc62f82418683bde0b4d1ae1e0b08529831d03"
+      url "https://github.com/edihasaj/vmlab/releases/download/v0.3.0/vmlab_0.3.0_linux_x86_64.tar.gz"
+      sha256 "b7c90928ca1c6f37054c88655ffe5623472e3aad97d236ddfb93b7a697d6ba4f"
       define_method(:install) do
         bin.install "vmlab"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/edihasaj/vmlab/releases/download/v0.2.6/vmlab_0.2.6_linux_arm64.tar.gz"
-      sha256 "1aef9e9d4c0681fbcab77055cd99af04f54c8fa0d2c845226c2421cc71c276cf"
+      url "https://github.com/edihasaj/vmlab/releases/download/v0.3.0/vmlab_0.3.0_linux_arm64.tar.gz"
+      sha256 "4549730b14d8ce6d392861c7003c66495249dbca8bc170cedd31790b6b56322e"
       define_method(:install) do
         bin.install "vmlab"
       end
