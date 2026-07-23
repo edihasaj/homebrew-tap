@@ -1,10 +1,10 @@
 class SlashX < Formula
   desc "Local X/Twitter CLI for posting, replying, and reading from the command line"
   homepage "https://github.com/edihasaj/slash-x#readme"
-  url "https://github.com/edihasaj/slash-x/releases/download/v1.4.2/slash-x-1.4.2.tar.gz"
-  sha256 "73a213012622a4c8a1c7fcb0bf493e51d354b9ce6917904a864dca58a216321e"
+  url "https://github.com/edihasaj/slash-x/releases/download/v1.4.3/slash-x-1.4.3.tar.gz"
+  sha256 "e6167e5459f4039d505df4674debc6a1af6c6833c14a726d5ecda40678803f1d"
   license "MIT"
-  version "1.4.2"
+  version "1.4.3"
 
   # Intentionally no `depends_on "node"`: the tarball bundles its own
   # node_modules, and the wrapper runs whatever node is already on PATH
