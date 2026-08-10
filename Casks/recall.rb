@@ -1,6 +1,6 @@
 cask "recall" do
-  version "0.9.11"
-  sha256 "9e1f477b8b6660c062df6d62db54bab329dc03607cf3c70dce4dc1973114394c"
+  version "0.9.12"
+  sha256 "f912d2c8cdeb65244bc4bcb56935e3ec4b1e546e0affb3494e351f2291607e0c"
 
   url "https://github.com/edihasaj/recall/releases/download/v#{version}/Recall.app.zip"
   name "Recall"
@@ -11,7 +11,7 @@ cask "recall" do
 
   app "Recall.app"
   binary "#{appdir}/Recall.app/Contents/Resources/Runtime/bin/recall",
-         target_name: "recall"
+         target: "recall"
 
   postflight do
     # The bundle is ad-hoc signed (no Developer ID), so Gatekeeper would
