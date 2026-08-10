@@ -1,8 +1,8 @@
 cask "recall" do
-  version "0.9.10"
-  sha256 "2402cae6f6f3e859d22b40f7b0e7696771dfb07736b3bdba43e42b563ab5c260"
+  version "0.9.11"
+  sha256 "9e1f477b8b6660c062df6d62db54bab329dc03607cf3c70dce4dc1973114394c"
 
-  url "https://github.com/edihasaj/recall/releases/download/v0.9.10/Recall.app.zip"
+  url "https://github.com/edihasaj/recall/releases/download/v#{version}/Recall.app.zip"
   name "Recall"
   desc "Local repo-memory compiler for coding agents"
   homepage "https://recallmemory.dev/"
@@ -10,8 +10,13 @@ cask "recall" do
   depends_on macos: :sequoia
 
   app "Recall.app"
+  binary "#{appdir}/Recall.app/Contents/Resources/Runtime/bin/recall",
+         target_name: "recall"
 
   postflight do
+    # The bundle is ad-hoc signed (no Developer ID), so Gatekeeper would
+    # otherwise refuse to launch it and macOS may relocate it. Strip the
+    # quarantine xattr that Homebrew sets after copying the app into place.
     system_command "/usr/bin/xattr",
                    args: ["-dr", "com.apple.quarantine", "#{appdir}/Recall.app"],
                    sudo: false
