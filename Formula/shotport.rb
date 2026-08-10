@@ -7,21 +7,21 @@ class Shotport < Formula
     depends_on "edihasaj/guiport/guiport"
 
     if Hardware::CPU.arm?
-      url "https://github.com/edihasaj/shotport/releases/download/v0.3.3/shotport-darwin-arm64"
-      sha256 "1fde634ab52c07f10ef2bb1941e2a3d13b5c6eaf4bc9912412519ba31f4f360d"
+      url "https://github.com/edihasaj/shotport/releases/download/v0.3.4/shotport-darwin-arm64"
+      sha256 "bc80a03251665aba7bf66be06e39ca056d58a7fdf32f7d05b8b168b2069b99e9"
     else
-      url "https://github.com/edihasaj/shotport/releases/download/v0.3.3/shotport-darwin-x64"
-      sha256 "e5968b1fb4414c27e50ba71c137e97b0c2ebe9534cf170aad78398da840dd10e"
+      url "https://github.com/edihasaj/shotport/releases/download/v0.3.4/shotport-darwin-x64"
+      sha256 "3cfade01c1a4c49287d4b423ec1cc5116d6b0db4542b97b4bac3edddedfa6980"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/edihasaj/shotport/releases/download/v0.3.3/shotport-linux-arm64"
-      sha256 "9370a9a61a239ca2c80fcf8fcefa237fa6db508a322123afd840174a1eedc769"
+      url "https://github.com/edihasaj/shotport/releases/download/v0.3.4/shotport-linux-arm64"
+      sha256 "09dd0038efa237603b1555ae8d1d34a5f332b39a12612dc792aec98718a5edf6"
     else
-      url "https://github.com/edihasaj/shotport/releases/download/v0.3.3/shotport-linux-x64"
-      sha256 "8f89526594ba89a4369704c2786977872efe074d18816f088815964a248a722a"
+      url "https://github.com/edihasaj/shotport/releases/download/v0.3.4/shotport-linux-x64"
+      sha256 "5a51f9a65d2d33b797df7092126f8c9af46abb2de441c4ff38a2def31b94d281"
     end
   end
 
