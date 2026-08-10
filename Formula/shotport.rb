@@ -1,7 +1,6 @@
 class Shotport < Formula
   desc "Token-cheap screenshot capture for coding agents"
   homepage "https://github.com/edihasaj/shotport"
-  version "0.3.3"
   license "MIT"
 
   on_macos do
