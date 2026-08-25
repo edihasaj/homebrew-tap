@@ -1,11 +1,11 @@
 cask "chirpgo" do
-  version "1.3.5"
-  sha256 "a745d40b3c940cefe963e18179acb38b82c71fcdce6963605c0c9bd86dd4ea17"
+  version "1.3.6"
+  sha256 "8dcfba5ad50cb212c579aaf2bd674fbab1ce0a032a1e7d80c8c46ea096b24698"
 
   url "https://dl.chirpgo.app/ChirpGo-#{version}.dmg"
   name "Chirp Go"
   desc "Local, private speech-to-text: press a hotkey, speak, get your words pasted"
-  homepage "https://chirpgo.app"
+  homepage "https://chirpgo.app/"
 
   livecheck do
     url "https://dl.chirpgo.app/latest.json"
