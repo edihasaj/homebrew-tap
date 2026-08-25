@@ -5,7 +5,7 @@ cask "chirpgo" do
   url "https://dl.chirpgo.app/ChirpGo-#{version}.dmg"
   name "Chirp Go"
   desc "Local, private speech-to-text: press a hotkey, speak, get your words pasted"
-  homepage "https://github.com/edihasaj/ChirpGo"
+  homepage "https://chirpgo.app"
 
   livecheck do
     url "https://dl.chirpgo.app/latest.json"
