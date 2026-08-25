@@ -27,5 +27,5 @@ jobs:
             exit 0
           fi
           for cask in "${casks[@]}"; do
-            brew audit --cask --new --online "edihasaj/tap/$(basename "$cask" .rb)"
+            brew audit --cask --online "edihasaj/tap/$(basename "$cask" .rb)"
           done
