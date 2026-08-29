@@ -1,6 +1,6 @@
 cask "chirpgo" do
-  version "1.3.7"
-  sha256 "830cf2e68d5cc21cbc8a63a82b108871c1d32d77c0c0bb2b2ad36eb764f05e1c"
+  version "1.3.8"
+  sha256 "652846d9876fc4d6cc62d7927eb65f4c6cfa7ad42104e178b9b8ed5ca0a162b7"
 
   url "https://dl.chirpgo.app/ChirpGo-#{version}.dmg"
   name "Chirp Go"
