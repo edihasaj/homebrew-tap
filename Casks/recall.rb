@@ -1,6 +1,6 @@
 cask "recall" do
-  version "1.4.6"
-  sha256 "ccca4b6c3527dd0beb20553c89fc3cea23e1d7fb4eee1521d509856f08647c94"
+  version "1.4.7"
+  sha256 "28dc33f2885790b15c9779ac0dc9ecdc132b3d3c19a3343e5f7528cee477c85d"
 
   url "https://github.com/edihasaj/recall/releases/download/v#{version}/Recall.app.zip"
   name "Recall"
