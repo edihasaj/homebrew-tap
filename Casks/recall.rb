@@ -1,6 +1,6 @@
 cask "recall" do
-  version "1.4.12"
-  sha256 "a7b450418c1650132faee1f1c825044e125b39e398aea65923e393464b35a302"
+  version "1.4.13"
+  sha256 "c882a76e165e127fd2bcb5b0922b98f673ddacb88c3149e28ac5c6cba0208af6"
 
   url "https://github.com/edihasaj/recall/releases/download/v#{version}/Recall.app.zip"
   name "Recall"
@@ -13,13 +13,11 @@ cask "recall" do
   binary "#{appdir}/Recall.app/Contents/Resources/Runtime/bin/recall",
          target: "recall"
 
-  postflight do
+  postflight_steps do
     # The bundle is ad-hoc signed (no Developer ID), so Gatekeeper would
     # otherwise refuse to launch it and macOS may relocate it. Strip the
     # quarantine xattr that Homebrew sets after copying the app into place.
-    system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Recall.app"],
-                   sudo: false
+    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Recall.app"]
   end
 
   zap trash: [
