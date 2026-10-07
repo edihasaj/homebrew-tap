@@ -21,3 +21,14 @@ shotport doctor
 
 On macOS, the formula installs guiport automatically. Guiport remains the single
 signed owner of Screen Recording and Accessibility permissions.
+
+## tmux fork
+
+The optional tmux fork lives in `Formula/tmux.rb`:
+
+```bash
+brew install edihasaj/tap/tmux
+```
+
+This formula preserves the 3.6b fork with its copy-mode crash fix. Keep an
+existing Homebrew core tmux installation unless you need that specific fork.
