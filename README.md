@@ -32,3 +32,12 @@ brew install edihasaj/tap/tmux
 
 This formula preserves the 3.6b fork with its copy-mode crash fix. Keep an
 existing Homebrew core tmux installation unless you need that specific fork.
+
+## CI
+
+The hosted macOS tap audit runs only for pushes and pull requests targeting
+`production`, or for an explicit manual dispatch with **Run paid macOS
+validation** enabled. The checkbox defaults off. The Linux native-policy job
+checks the workflow on every eligible run; a skipped macOS job is not native
+proof. Run `node --test scripts/native-ci-policy.test.mjs` locally to verify
+the workflow event guards without installing dependencies.
